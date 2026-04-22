@@ -47,7 +47,6 @@
 
   .mono { font-family: 'SFMono-Regular', 'Menlo', 'Consolas', monospace; }
 
-  /* ============ HEADER ============ */
   header.brand {
     background: var(--charcoal);
     color: #fff;
@@ -64,11 +63,7 @@
     gap: 24px;
   }
 
-  .brand-logo img {
-    height: 52px;
-    width: auto;
-    display: block;
-  }
+  .brand-logo img { height: 52px; width: auto; display: block; }
 
   .brand-meta {
     font-family: 'Inter', sans-serif;
@@ -89,12 +84,7 @@
     margin-bottom: 2px;
   }
 
-  /* ============ DOC TITLE ============ */
-  .doc-title {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 56px 40px 28px;
-  }
+  .doc-title { max-width: 1000px; margin: 0 auto; padding: 56px 40px 28px; }
 
   .eyebrow {
     display: inline-block;
@@ -118,19 +108,9 @@
     line-height: 1.05;
   }
 
-  .doc-sub {
-    font-size: 17px;
-    color: var(--steel);
-    margin: 0;
-    max-width: 680px;
-  }
+  .doc-sub { font-size: 17px; color: var(--steel); margin: 0; max-width: 680px; }
 
-  /* ============ FACT SHEET ============ */
-  .fact-sheet {
-    max-width: 1000px;
-    margin: 28px auto 0;
-    padding: 0 40px;
-  }
+  .fact-sheet { max-width: 1000px; margin: 28px auto 0; padding: 0 40px; }
 
   .facts-grid {
     display: grid;
@@ -161,12 +141,7 @@
 
   .fact-value.small { font-size: 14px; line-height: 1.35; }
 
-  /* ============ SECTIONS ============ */
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 40px 80px;
-  }
+  main { max-width: 1000px; margin: 0 auto; padding: 0 40px 80px; }
 
   section { margin-top: 56px; }
 
@@ -239,7 +214,6 @@
   ul.tight li { margin-bottom: 6px; }
   ul.tight li:last-child { margin-bottom: 0; }
 
-  /* ============ CALENDAR TABLE ============ */
   table.calendar {
     width: 100%;
     border-collapse: collapse;
@@ -280,7 +254,6 @@
   table.calendar tr:last-child td { border-bottom: none; }
   table.calendar td em { color: var(--steel); font-style: normal; font-size: 13px; }
 
-  /* ============ WEEK CARD ============ */
   .week-card {
     background: var(--card);
     border: 1px solid var(--rule);
@@ -300,11 +273,7 @@
     flex-wrap: wrap;
   }
 
-  .week-card-header .week-tag {
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-  }
+  .week-card-header .week-tag { display: flex; align-items: baseline; gap: 14px; }
 
   .week-card-header .week-num {
     font-family: 'Oswald', sans-serif;
@@ -338,7 +307,6 @@
 
   .week-card-body { padding: 28px 28px 32px; }
 
-  /* ============ ASSET BLOCK ============ */
   .asset-block { margin-bottom: 32px; }
   .asset-block:last-child { margin-bottom: 0; }
 
@@ -404,7 +372,6 @@
 
   .asset-row-body { font-size: 14.5px; line-height: 1.6; }
 
-  /* On-image preview mock */
   .on-image-mock {
     background: var(--paper);
     border: 1px solid var(--rule);
@@ -441,7 +408,6 @@
     margin: 0;
   }
 
-  /* Caption block */
   .caption-block {
     background: var(--paper);
     border-left: 3px solid var(--charcoal);
@@ -473,7 +439,6 @@
     font-style: italic;
   }
 
-  /* Carousel slides */
   .slides-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -519,7 +484,6 @@
 
   .slide.cta { background: var(--orange-soft); border-top-color: var(--orange); }
 
-  /* ============ FOOTER ============ */
   footer {
     background: var(--charcoal);
     color: rgba(255,255,255,0.78);
@@ -541,7 +505,6 @@
 
   .footer-inner strong { color: var(--orange); font-weight: 600; letter-spacing: 0.14em; }
 
-  /* ============ RESPONSIVE ============ */
   @media (max-width: 720px) {
     .brand-inner, main, .doc-title, .fact-sheet { padding-left: 22px; padding-right: 22px; }
     h1.doc-h1 { font-size: 36px; }
@@ -553,7 +516,6 @@
     .asset-role { margin-left: 0; width: 100%; }
   }
 
-  /* ============ PRINT ============ */
   @media print {
     body { background: #fff; font-size: 11pt; }
     header.brand { border-bottom-width: 3px; }
@@ -582,20 +544,20 @@
 <div class="doc-title">
   <div class="eyebrow">Campaign Playbook · VA Execution Guide</div>
   <h1 class="doc-h1">Design Your Freedom Patch</h1>
-  <p class="doc-sub">The complete organic rollout. Five statics, five carousels, one reel per week across IG, FB, and TikTok from May 1 through May 27. Every asset mapped, scripted, and ready to build.</p>
+  <p class="doc-sub">Compressed two-week rollout. Three statics, three carousels, two reels across IG, FB, and TikTok from May 1 through May 18. Every asset mapped, scripted, and ready to build.</p>
 </div>
 
 <div class="fact-sheet">
   <div class="facts-grid">
     <div class="fact"><div class="fact-label">Client</div><div class="fact-value">Aviator Gear</div></div>
     <div class="fact"><div class="fact-label">Campaign</div><div class="fact-value small">Design Your Freedom Patch</div></div>
-    <div class="fact"><div class="fact-label">Window</div><div class="fact-value small">May 1 to May 27, 2026</div></div>
-    <div class="fact"><div class="fact-label">Cadence</div><div class="fact-value small">3 posts/week (1 reel + 2 static or carousel)</div></div>
-    <div class="fact"><div class="fact-label">Statics</div><div class="fact-value">5</div></div>
-    <div class="fact"><div class="fact-label">Carousels</div><div class="fact-value">5 (1 optional)</div></div>
-    <div class="fact"><div class="fact-label">Platforms</div><div class="fact-value small">IG · FB · TikTok</div></div>
+    <div class="fact"><div class="fact-label">Window</div><div class="fact-value small">May 1 to May 18, 2026</div></div>
+    <div class="fact"><div class="fact-label">Submission Deadline</div><div class="fact-value small">May 15 · 11:59 PM CT</div></div>
+    <div class="fact"><div class="fact-label">Winner Announced</div><div class="fact-value small">May 18</div></div>
+    <div class="fact"><div class="fact-label">Reels</div><div class="fact-value">2</div></div>
+    <div class="fact"><div class="fact-label">Statics</div><div class="fact-value">3</div></div>
+    <div class="fact"><div class="fact-label">Carousels</div><div class="fact-value">3 (1 optional)</div></div>
     <div class="fact"><div class="fact-label">Hashtag</div><div class="fact-value small">#DesignYourFreedomPatch</div></div>
-    <div class="fact"><div class="fact-label">Handle</div><div class="fact-value small">@aviatorgear</div></div>
   </div>
 </div>
 
@@ -604,12 +566,12 @@
   <section>
     <h2 class="section-h2"><span class="num">01</span> Campaign Summary</h2>
     <div class="block">
-      <p>Aviator Gear is running the <strong>Design Your Freedom Patch</strong> contest through May. Followers submit an entry in one of two ways.</p>
+      <p>Aviator Gear is running a two-week <strong>Design Your Freedom Patch</strong> contest. Followers submit an entry in one of two ways.</p>
       <ul class="tight">
         <li><strong>Design from scratch.</strong> Create a new Freedom-themed patch concept.</li>
         <li><strong>Convert an existing patch.</strong> Send in the unit patch they already have. Aviator Gear adapts it into a Freedom Patch concept for them.</li>
       </ul>
-      <p style="margin-top: 14px;">The <strong>"you don't have to start from zero"</strong> angle is the strategic core of this campaign. Both entry paths should be visible in every post.</p>
+      <p style="margin-top: 14px;">The <strong>"you don't have to start from zero"</strong> angle is the strategic core. With fewer assets than originally planned, both entry paths must appear in every post.</p>
     </div>
 
     <div class="callout">
@@ -629,8 +591,8 @@
   </section>
 
   <section>
-    <h2 class="section-h2"><span class="num">03</span> Posting Cadence &amp; Calendar</h2>
-    <p>3 posts per week. Monday reel, midweek carousel, weekend static. Adjust day-of-week to fit existing posting patterns.</p>
+    <h2 class="section-h2"><span class="num">03</span> Posting Calendar</h2>
+    <p>Two active campaign weeks plus a winner week. Each asset below pairs with the matching reel from the videographer brief.</p>
     <table class="calendar">
       <thead>
         <tr>
@@ -648,28 +610,16 @@
           <td>01 How it works</td>
         </tr>
         <tr>
-          <td class="week-label">May 8</td>
-          <td>Patch inspiration</td>
-          <td>02 Reminder</td>
-          <td>02 Freedom Patch inspiration</td>
-        </tr>
-        <tr>
-          <td class="week-label">May 15</td>
-          <td>Existing patch to Freedom concept</td>
-          <td>03 Reminder</td>
-          <td>03 Redesign vs reorder</td>
-        </tr>
-        <tr>
-          <td class="week-label">May 22</td>
+          <td class="week-label">May 11</td>
           <td>Deadline urgency</td>
-          <td>04 Final reminder</td>
-          <td>04 Last chance</td>
+          <td>02 Final reminder</td>
+          <td>02 Last chance</td>
         </tr>
         <tr>
-          <td class="week-label">May 27</td>
+          <td class="week-label">May 18</td>
           <td>None</td>
-          <td>05 Winner announcement</td>
-          <td>05 Winner spotlight <em>(optional)</em></td>
+          <td>03 Winner announcement</td>
+          <td>03 Winner spotlight <em>(optional)</em></td>
         </tr>
       </tbody>
     </table>
@@ -689,7 +639,7 @@
     <ul class="tight" style="margin-top: 20px;">
       <li>Use <span class="mono">#DesignYourFreedomPatch</span> consistently in every caption.</li>
       <li>Tone: confident, proud, community-oriented. Restraint over loudness.</li>
-      <li>Start collecting submission screenshots from May 2 so there's a full grid ready for Carousel 4 (Last Chance) and Week 5 spotlight.</li>
+      <li>Start screenshotting tagged submissions on May 2 so the winner spotlight carousel has a visual bank ready.</li>
     </ul>
   </section>
 
@@ -746,7 +696,7 @@ IG, post your design or existing patch to your story and tag @aviatorgear
 FB, comment your design or existing patch on this post
 TikTok, post your design or existing patch, tag @aviatorgear with #DesignYourFreedomPatch
 
-Submissions close May 24 at 11:59 PM CT. Winner announced May 27.</div>
+Submissions close May 15 at 11:59 PM CT. Winner announced May 18.</div>
             </div>
           </div>
 
@@ -763,7 +713,7 @@ Submissions close May 24 at 11:59 PM CT. Winner announced May 27.</div>
           <div class="asset-header">
             <span class="asset-type-badge carousel">Carousel 01</span>
             <h4 class="asset-name">How the Contest Works</h4>
-            <span class="asset-role">Explainer. Lands mechanics and prize.</span>
+            <span class="asset-role">Explainer. Covers mechanics, prize, and the redesign-vs-reorder distinction.</span>
           </div>
 
           <div class="asset-row">
@@ -787,8 +737,8 @@ Submissions close May 24 at 11:59 PM CT. Winner announced May 27.</div>
                 </div>
                 <div class="slide">
                   <div class="slide-num">Slide 04</div>
-                  <h5 class="slide-title">No Pro Tools Needed</h5>
-                  <div class="slide-body">Sketch, digital, napkin. Whatever gets the idea across. We'll handle production.</div>
+                  <h5 class="slide-title">Redesign, Not Reorder</h5>
+                  <div class="slide-body">This isn't a reorder of your existing patch as-is. We'll build a Freedom-themed version, color, symbol, or layout adjustment, while keeping what matters most about the original.</div>
                 </div>
                 <div class="slide">
                   <div class="slide-num">Slide 05</div>
@@ -798,7 +748,7 @@ Submissions close May 24 at 11:59 PM CT. Winner announced May 27.</div>
                 <div class="slide">
                   <div class="slide-num">Slide 06</div>
                   <h5 class="slide-title">Timeline</h5>
-                  <div class="slide-body">Launch: May 1. Deadline: May 24, 11:59 PM CT. Winner: May 27.</div>
+                  <div class="slide-body">Launch: May 1. Deadline: May 15, 11:59 PM CT. Winner: May 18.</div>
                 </div>
                 <div class="slide cta">
                   <div class="slide-num">Slide 07 · CTA</div>
@@ -814,7 +764,9 @@ Submissions close May 24 at 11:59 PM CT. Winner announced May 27.</div>
             <div class="asset-row-body">
               <div class="caption-block">Two ways to enter our Design Your Freedom Patch contest. Swipe for the full rundown.
 
-Submissions close May 24. Winner takes home 50 free patches of the winning design.</div>
+And heads up, this is a redesign contest, not a reorder. If you send your existing patch, we adapt it into a Freedom concept.
+
+Submissions close May 15. Winner takes home 50 free patches.</div>
             </div>
           </div>
         </div>
@@ -823,18 +775,18 @@ Submissions close May 24. Winner takes home 50 free patches of the winning desig
     </div>
   </section>
 
-  <!-- ======== WEEK OF MAY 8 ======== -->
+  <!-- ======== WEEK OF MAY 11 ======== -->
   <section>
-    <h2 class="section-h2"><span class="num">06</span> Week of May 8</h2>
+    <h2 class="section-h2"><span class="num">06</span> Week of May 11</h2>
 
     <div class="week-card">
       <div class="week-card-header">
         <div class="week-tag">
           <span class="week-num">Week 02</span>
-          <h3>Inspiration Week</h3>
+          <h3>Deadline Week</h3>
         </div>
         <div class="week-reel-ref">
-          <strong>Reel · Patch Inspiration</strong>
+          <strong>Reel · Deadline Final Push</strong>
           See videographer brief
         </div>
       </div>
@@ -844,17 +796,17 @@ Submissions close May 24. Winner takes home 50 free patches of the winning desig
         <div class="asset-block">
           <div class="asset-header">
             <span class="asset-type-badge">Static 02</span>
-            <h4 class="asset-name">Reminder</h4>
-            <span class="asset-role">Keeps the contest top of mind.</span>
+            <h4 class="asset-name">Final Reminder</h4>
+            <span class="asset-role">Urgency without cheese.</span>
           </div>
 
           <div class="asset-row">
             <div class="asset-row-label">On-Image Copy</div>
             <div class="asset-row-body">
               <div class="on-image-mock">
-                <p class="oim-headline">Submissions Are Open</p>
-                <p class="oim-support">Through May 24.</p>
-                <p class="oim-cta">Tag @aviatorgear with your entry.</p>
+                <p class="oim-headline">Deadline Friday</p>
+                <p class="oim-support">Submissions close May 15, 11:59 PM CT.</p>
+                <p class="oim-cta">Tag @aviatorgear before Friday night.</p>
               </div>
             </div>
           </div>
@@ -862,9 +814,11 @@ Submissions close May 24. Winner takes home 50 free patches of the winning desig
           <div class="asset-row">
             <div class="asset-row-label">Caption</div>
             <div class="asset-row-body">
-              <div class="caption-block">Two weeks left in our Design Your Freedom Patch contest.
+              <div class="caption-block">Final stretch.
 
-Design one from scratch or send us your unit patch to adapt. Either path, same prize. 50 free patches of the winning design.
+Design from scratch or send us your existing patch to adapt. Either way, deadline's Friday night.
+
+Submissions close May 15 at 11:59 PM CT. Winner announced May 18.
 
 IG story, FB comment, or TikTok. Tag @aviatorgear.
 #DesignYourFreedomPatch</div>
@@ -876,239 +830,8 @@ IG story, FB comment, or TikTok. Tag @aviatorgear.
         <div class="asset-block">
           <div class="asset-header">
             <span class="asset-type-badge carousel">Carousel 02</span>
-            <h4 class="asset-name">Freedom Patch Inspiration</h4>
-            <span class="asset-role">Helps people past "I don't know what to design."</span>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">Slides</div>
-            <div class="asset-row-body">
-              <div class="slides-grid">
-                <div class="slide cover">
-                  <div class="slide-num">Slide 01 · Cover</div>
-                  <h5 class="slide-title">Need a Starting Point?</h5>
-                  <div class="slide-body">Freedom Patch inspiration</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 02</div>
-                  <h5 class="slide-title">Classic Motifs</h5>
-                  <div class="slide-body">Stars. Stripes. Eagles. Banners. Rivets. They work because they mean something.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 03</div>
-                  <h5 class="slide-title">Unit Heritage</h5>
-                  <div class="slide-body">Squadron markings. Ship silhouettes. Call signs. Tail numbers. Years of service. The Freedom angle can layer on top of what's already yours.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 04</div>
-                  <h5 class="slide-title">Color</h5>
-                  <div class="slide-body">Red, white, and blue is the obvious move. Desert tan, muted olive, and black and silver all work if the story fits.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 05</div>
-                  <h5 class="slide-title">Type That Hits</h5>
-                  <div class="slide-body">Stencil. Block. Serif. Script with weight. Let the lettering carry the message, mottos, callouts, years.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 06</div>
-                  <h5 class="slide-title">Don't Overthink It</h5>
-                  <div class="slide-body">Good patches are simple and specific. Pick one story. Tell it well.</div>
-                </div>
-                <div class="slide cta">
-                  <div class="slide-num">Slide 07 · CTA</div>
-                  <h5 class="slide-title">Ready?</h5>
-                  <div class="slide-body">IG story, FB comment, or TikTok. Tag @aviatorgear. Deadline: May 24.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">Caption</div>
-            <div class="asset-row-body">
-              <div class="caption-block">Stuck on where to start? Swipe for Freedom Patch inspiration.
-
-The best patches are specific, one story told well. Pick yours and send it.
-
-#DesignYourFreedomPatch</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== WEEK OF MAY 15 ======== -->
-  <section>
-    <h2 class="section-h2"><span class="num">07</span> Week of May 15</h2>
-
-    <div class="week-card">
-      <div class="week-card-header">
-        <div class="week-tag">
-          <span class="week-num">Week 03</span>
-          <h3>Adaptation Week</h3>
-        </div>
-        <div class="week-reel-ref">
-          <strong>Reel · Existing to Freedom</strong>
-          See videographer brief
-        </div>
-      </div>
-      <div class="week-card-body">
-
-        <!-- Static 3 -->
-        <div class="asset-block">
-          <div class="asset-header">
-            <span class="asset-type-badge">Static 03</span>
-            <h4 class="asset-name">Reminder</h4>
-            <span class="asset-role">Hammers the "adapt existing patch" path.</span>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">On-Image Copy</div>
-            <div class="asset-row-body">
-              <div class="on-image-mock">
-                <p class="oim-headline">Send Your Existing Patch</p>
-                <p class="oim-support">We'll adapt it into a Freedom Patch concept.</p>
-                <p class="oim-cta">No redesign required.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">Caption</div>
-            <div class="asset-row-body">
-              <div class="caption-block">Reminder, you don't have to start from scratch.
-
-If you've got a unit patch, a squadron badge, or a crew emblem you already love, send it our way. We'll work it into a Freedom Patch concept for you.
-
-Winner gets 50 free patches. Deadline May 24.
-
-IG story, FB comment, or TikTok. Tag @aviatorgear.
-#DesignYourFreedomPatch</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel 3 -->
-        <div class="asset-block">
-          <div class="asset-header">
-            <span class="asset-type-badge carousel">Carousel 03</span>
-            <h4 class="asset-name">Redesign vs Reorder</h4>
-            <span class="asset-role">Clarifies the contest is not a reorder. Strategic.</span>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">Slides</div>
-            <div class="asset-row-body">
-              <div class="slides-grid">
-                <div class="slide cover">
-                  <div class="slide-num">Slide 01 · Cover</div>
-                  <h5 class="slide-title">This Isn't a Reorder</h5>
-                  <div class="slide-body">Redesign vs reorder</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 02</div>
-                  <h5 class="slide-title">What the Contest Is</h5>
-                  <div class="slide-body">A redesign contest. The goal is a new Freedom Patch concept, either designed fresh or adapted from your existing patch.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 03</div>
-                  <h5 class="slide-title">What It Isn't</h5>
-                  <div class="slide-body">It's not a reorder of your current patch as-is. The design needs a Freedom-themed angle or adaptation.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 04</div>
-                  <h5 class="slide-title">How Adaptation Works</h5>
-                  <div class="slide-body">Send us your existing patch. We'll build a Freedom-themed version, color, symbol, or layout adjustment, while keeping what matters most about the original.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 05</div>
-                  <h5 class="slide-title">What We Need From You</h5>
-                  <div class="slide-body">A clear image of your existing patch. A line or two about what it represents. That's it. We'll handle the rest.</div>
-                </div>
-                <div class="slide cta">
-                  <div class="slide-num">Slide 06 · CTA</div>
-                  <h5 class="slide-title">Ready to Submit?</h5>
-                  <div class="slide-body">IG story, FB comment, or TikTok. Tag @aviatorgear. Deadline: May 24.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">Caption</div>
-            <div class="asset-row-body">
-              <div class="caption-block">Heads up, this is a redesign contest, not a reorder.
-
-The winning submission is a Freedom Patch concept: either designed from scratch OR adapted from your existing unit patch. Swipe for what that actually looks like.
-
-#DesignYourFreedomPatch</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== WEEK OF MAY 22 ======== -->
-  <section>
-    <h2 class="section-h2"><span class="num">08</span> Week of May 22</h2>
-
-    <div class="week-card">
-      <div class="week-card-header">
-        <div class="week-tag">
-          <span class="week-num">Week 04</span>
-          <h3>Deadline Week</h3>
-        </div>
-        <div class="week-reel-ref">
-          <strong>Reel · Deadline Urgency</strong>
-          See videographer brief
-        </div>
-      </div>
-      <div class="week-card-body">
-
-        <!-- Static 4 -->
-        <div class="asset-block">
-          <div class="asset-header">
-            <span class="asset-type-badge">Static 04</span>
-            <h4 class="asset-name">Final Reminder</h4>
-            <span class="asset-role">Urgency without cheese.</span>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">On-Image Copy</div>
-            <div class="asset-row-body">
-              <div class="on-image-mock">
-                <p class="oim-headline">Last Week</p>
-                <p class="oim-support">Submissions close May 24, 11:59 PM CT.</p>
-                <p class="oim-cta">Tag @aviatorgear before Sunday night.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">Caption</div>
-            <div class="asset-row-body">
-              <div class="caption-block">Final stretch.
-
-Design from scratch or send us your existing patch to adapt. Either way, deadline's Sunday night.
-
-Submissions close May 24 at 11:59 PM CT. Winner announced May 27.
-
-IG story, FB comment, or TikTok. Tag @aviatorgear.
-#DesignYourFreedomPatch</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Carousel 4 -->
-        <div class="asset-block">
-          <div class="asset-header">
-            <span class="asset-type-badge carousel">Carousel 04</span>
             <h4 class="asset-name">Last Chance</h4>
-            <span class="asset-role">Countdown push to close the window.</span>
+            <span class="asset-role">Countdown push. Recaps paths, prize, and deadline.</span>
           </div>
 
           <div class="asset-row">
@@ -1118,7 +841,7 @@ IG story, FB comment, or TikTok. Tag @aviatorgear.
                 <div class="slide cover">
                   <div class="slide-num">Slide 01 · Cover</div>
                   <h5 class="slide-title">Last Chance</h5>
-                  <div class="slide-body">Submissions close May 24</div>
+                  <div class="slide-body">Submissions close May 15</div>
                 </div>
                 <div class="slide">
                   <div class="slide-num">Slide 02</div>
@@ -1133,7 +856,7 @@ IG story, FB comment, or TikTok. Tag @aviatorgear.
                 <div class="slide">
                   <div class="slide-num">Slide 04</div>
                   <h5 class="slide-title">Timeline</h5>
-                  <div class="slide-body">Deadline: May 24, 11:59 PM CT. Winner: May 27.</div>
+                  <div class="slide-body">Deadline: May 15, 11:59 PM CT. Winner: May 18.</div>
                 </div>
                 <div class="slide">
                   <div class="slide-num">Slide 05</div>
@@ -1152,7 +875,7 @@ IG story, FB comment, or TikTok. Tag @aviatorgear.
           <div class="asset-row">
             <div class="asset-row-label">Caption</div>
             <div class="asset-row-body">
-              <div class="caption-block">Last chance to enter our Design Your Freedom Patch contest. Deadline Sunday at 11:59 PM CT.
+              <div class="caption-block">Last chance to enter our Design Your Freedom Patch contest. Deadline Friday at 11:59 PM CT.
 
 If you've been sitting on an idea, or on a unit patch you've been meaning to do something with, this is the moment.
 
@@ -1165,14 +888,14 @@ If you've been sitting on an idea, or on a unit patch you've been meaning to do 
     </div>
   </section>
 
-  <!-- ======== WEEK OF MAY 27 ======== -->
+  <!-- ======== WEEK OF MAY 18 ======== -->
   <section>
-    <h2 class="section-h2"><span class="num">09</span> Week of May 27</h2>
+    <h2 class="section-h2"><span class="num">07</span> Week of May 18</h2>
 
     <div class="week-card">
       <div class="week-card-header">
         <div class="week-tag">
-          <span class="week-num">Week 05</span>
+          <span class="week-num">Week 03</span>
           <h3>Winner Week</h3>
         </div>
         <div class="week-reel-ref">
@@ -1182,10 +905,10 @@ If you've been sitting on an idea, or on a unit patch you've been meaning to do 
       </div>
       <div class="week-card-body">
 
-        <!-- Static 5 -->
+        <!-- Static 3 -->
         <div class="asset-block">
           <div class="asset-header">
-            <span class="asset-type-badge">Static 05</span>
+            <span class="asset-type-badge">Static 03</span>
             <h4 class="asset-name">Winner Announcement</h4>
             <span class="asset-role">Closes the loop. Celebrates.</span>
           </div>
@@ -1229,12 +952,12 @@ This won't be the last one. Stay close.</div>
           </div>
         </div>
 
-        <!-- Carousel 5 (optional) -->
+        <!-- Carousel 3 (optional) -->
         <div class="asset-block">
           <div class="asset-header">
-            <span class="asset-type-badge carousel">Carousel 05</span>
+            <span class="asset-type-badge carousel">Carousel 03</span>
             <h4 class="asset-name">Winner Spotlight (Optional)</h4>
-            <span class="asset-role">Longer follow-up. Runs a few days after Static 05.</span>
+            <span class="asset-role">Longer follow-up. Runs a few days after Static 03.</span>
           </div>
 
           <div class="asset-row">
@@ -1295,13 +1018,13 @@ Every submission had a story. This one stood out. Swipe for how [WINNER HANDLE] 
   </section>
 
   <section>
-    <h2 class="section-h2"><span class="num">10</span> Production Notes for the VA</h2>
+    <h2 class="section-h2"><span class="num">08</span> Production Notes for the VA</h2>
     <ul class="tight">
       <li>Build all on-image copy in Canva using the provided FB, IG, and Story templates. Apply each headline, support line, and CTA to the corresponding template slot.</li>
       <li>If a template has less room than the full on-image copy, keep the <strong>headline + CTA</strong> and move the support line into the caption.</li>
       <li>Story versions should always include a "Tap for details" sticker linking to the feed post.</li>
-      <li>Use the same Aviator Gear logo lockup and color treatment across all six weeks. One campaign, one visual system.</li>
-      <li>Start screenshotting tagged submissions on May 2 so Carousel 04 (Last Chance) and Week 5 Winner Spotlight have a full visual bank to pull from.</li>
+      <li>Use the same Aviator Gear logo lockup and color treatment across all three weeks. One campaign, one visual system.</li>
+      <li>Start screenshotting tagged submissions on May 2 so Winner Week has a full visual bank.</li>
       <li>Questions on tone, phrasing, or platform fit go to the campaign lead before publishing. Do not freestyle captions.</li>
     </ul>
   </section>
