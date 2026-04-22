@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videographer Brief, Design Your Freedom Patch | Aviator Gear</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --orange: #b45314;
+    --orange-dark: #8f3f0a;
+    --orange-soft: #f7ece1;
+    --charcoal: #1c1d1f;
+    --graphite: #323333;
+    --steel: #5f6164;
+    --fog: #d6d7d8;
+    --paper: #fafafa;
+    --paper-dark: #efefef;
+    --card: #ffffff;
+    --ink: #1c1d1f;
+    --ink-soft: #5f6164;
+    --rule: #d6d7d8;
+    --red: #b0302b;
+    --blue: #358ddc;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .display {
+    font-family: 'Oswald', 'Arial Narrow', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .mono { font-family: 'SFMono-Regular', 'Menlo', 'Consolas', monospace; }
+
+  /* ============ HEADER ============ */
+  header.brand {
+    background: var(--charcoal);
+    color: #fff;
+    border-bottom: 4px solid var(--orange);
+  }
+
+  .brand-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 22px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .brand-logo img {
+    height: 52px;
+    width: auto;
+    display: block;
+  }
+
+  .brand-meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    text-align: right;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+  }
+
+  .brand-meta strong {
+    display: block;
+    color: var(--orange);
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+
+  /* ============ DOC TITLE ============ */
+  .doc-title {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 56px 40px 28px;
+  }
+
+  .eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--orange);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--orange);
+    margin-bottom: 18px;
+  }
+
+  h1.doc-h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    margin: 0 0 10px;
+    line-height: 1.05;
+  }
+
+  .doc-sub {
+    font-size: 17px;
+    color: var(--steel);
+    margin: 0;
+    max-width: 620px;
+  }
+
+  /* ============ FACT SHEET ============ */
+  .fact-sheet {
+    max-width: 960px;
+    margin: 28px auto 0;
+    padding: 0 40px;
+  }
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+
+  .fact {
+    background: var(--card);
+    padding: 18px 22px;
+  }
+
+  .fact-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 6px;
+  }
+
+  .fact-value {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--charcoal);
+    letter-spacing: 0.02em;
+  }
+
+  .fact-value.small {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  /* ============ SECTIONS ============ */
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+
+  section {
+    margin-top: 56px;
+  }
+
+  h2.section-h2 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--charcoal);
+    margin: 0 0 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--charcoal);
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  h2.section-h2 .num {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--orange);
+    letter-spacing: 0.28em;
+  }
+
+  .block p { margin: 0 0 12px; }
+  .block p:last-child { margin-bottom: 0; }
+
+  .callout {
+    background: var(--charcoal);
+    color: #fff;
+    padding: 22px 26px;
+    border-left: 4px solid var(--orange);
+    margin: 24px 0;
+    border-radius: 2px;
+  }
+
+  .callout-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 8px;
+  }
+
+  .callout p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .do-not {
+    background: #fdf4f3;
+    border-left: 4px solid var(--red);
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+
+  .do-not-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .do-not ul { margin: 0; padding-left: 20px; }
+  .do-not li { margin-bottom: 6px; }
+  .do-not li:last-child { margin-bottom: 0; }
+
+  ul.tight {
+    padding-left: 22px;
+    margin: 0;
+  }
+
+  ul.tight li { margin-bottom: 6px; }
+  ul.tight li:last-child { margin-bottom: 0; }
+
+  /* ============ REEL CARDS ============ */
+  .reel-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 24px;
+  }
+
+  article.reel {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-top: 5px solid var(--orange);
+    page-break-inside: avoid;
+  }
+
+  .reel-header {
+    background: var(--charcoal);
+    color: #fff;
+    padding: 18px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .reel-tag {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+
+  .reel-num {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    color: var(--orange);
+    text-transform: uppercase;
+  }
+
+  .reel-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .reel-meta {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  .reel-meta strong { color: var(--orange); font-weight: 600; }
+
+  .reel-body {
+    padding: 28px 28px 32px;
+  }
+
+  .reel-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--paper-dark);
+  }
+
+  .reel-row:last-child { border-bottom: none; }
+
+  .reel-row-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--orange);
+    padding-top: 3px;
+  }
+
+  .reel-row-body { font-size: 14.5px; line-height: 1.6; }
+
+  .reel-row-body ul { margin: 0; padding-left: 18px; }
+  .reel-row-body ol { margin: 0; padding-left: 22px; }
+  .reel-row-body li { margin-bottom: 4px; }
+
+  .hook-option {
+    display: block;
+    padding: 8px 14px;
+    background: var(--orange-soft);
+    border-left: 3px solid var(--orange);
+    margin-bottom: 8px;
+    font-size: 14.5px;
+    font-style: italic;
+  }
+
+  .hook-option:last-child { margin-bottom: 0; }
+
+  table.timing {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+
+  table.timing td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--paper-dark);
+    vertical-align: top;
+  }
+
+  table.timing tr:last-child td { border-bottom: none; }
+
+  table.timing td.ts {
+    font-family: 'SFMono-Regular', 'Menlo', monospace;
+    font-size: 12px;
+    color: var(--orange);
+    font-weight: 600;
+    width: 90px;
+    white-space: nowrap;
+  }
+
+  .vo-block {
+    background: var(--paper);
+    border-left: 3px solid var(--charcoal);
+    padding: 14px 18px;
+    font-style: italic;
+    color: var(--ink);
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+
+  .vo-block:before {
+    content: "\201C";
+    font-size: 28px;
+    color: var(--orange);
+    font-family: Georgia, serif;
+    line-height: 0;
+    position: relative;
+    top: 10px;
+    margin-right: 4px;
+  }
+
+  /* ============ CHECKLIST ============ */
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+  }
+
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--rule);
+    font-size: 14.5px;
+  }
+
+  .checklist li:last-child { border-bottom: none; }
+
+  .box {
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--orange);
+    flex-shrink: 0;
+    margin-top: 2px;
+    border-radius: 2px;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--charcoal);
+    color: rgba(255,255,255,0.78);
+    padding: 36px 40px;
+    border-top: 4px solid var(--orange);
+    margin-top: 80px;
+  }
+
+  .footer-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  .footer-inner strong { color: var(--orange); font-weight: 600; letter-spacing: 0.14em; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 720px) {
+    .brand-inner, main, .doc-title, .fact-sheet { padding-left: 22px; padding-right: 22px; }
+    h1.doc-h1 { font-size: 36px; }
+    .facts-grid { grid-template-columns: 1fr 1fr; }
+    .reel-row { grid-template-columns: 1fr; gap: 6px; }
+    .reel-header { flex-direction: column; }
+    .reel-meta { text-align: left; }
+  }
+
+  /* ============ PRINT ============ */
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    header.brand { border-bottom-width: 3px; }
+    .brand-inner, .doc-title, .fact-sheet, main { padding-left: 24pt; padding-right: 24pt; max-width: 100%; }
+    article.reel { page-break-inside: avoid; }
+    section { page-break-inside: avoid; }
+    footer { background: #fff; color: #000; border-top: 2pt solid var(--orange); }
+    footer .footer-inner { color: #222; }
+    a { color: var(--charcoal); text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="brand">
+  <div class="brand-inner">
+    <div class="brand-logo">
+      <img src="https://www.aviatorgear.com/skins/aviator-gear/img/png/logo-light.png" alt="Aviator Gear">
+    </div>
+    <div class="brand-meta">
+      <strong>Videographer Brief</strong>
+      aviatorgear.com
+    </div>
+  </div>
+</header>
+
+<div class="doc-title">
+  <div class="eyebrow">Campaign Brief · Production Plan</div>
+  <h1 class="doc-h1">Design Your Freedom Patch</h1>
+  <p class="doc-sub">Four reels. One per week. Delivery begins May 1. Everything needed to shoot, edit, and turn in this campaign is inside.</p>
+</div>
+
+<div class="fact-sheet">
+  <div class="facts-grid">
+    <div class="fact">
+      <div class="fact-label">Client</div>
+      <div class="fact-value">Aviator Gear</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Campaign</div>
+      <div class="fact-value small">Design Your Freedom Patch</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Deliverables</div>
+      <div class="fact-value">4 Reels</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Reel 1 Due</div>
+      <div class="fact-value">May 1, 2026</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Reel Cadence</div>
+      <div class="fact-value small">Weekly · May 1, 8, 15, 22</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Aspect / Format</div>
+      <div class="fact-value small">9:16 · 1080x1920 · MP4</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Footage Sources</div>
+      <div class="fact-value small">Aviator Gear Dropbox + Licensed Stock</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Submission Deadline</div>
+      <div class="fact-value small">May 24 · 11:59 PM CT</div>
+    </div>
+    <div class="fact">
+      <div class="fact-label">Winner</div>
+      <div class="fact-value small">Announced May 27</div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <section>
+    <h2 class="section-h2"><span class="num">01</span> Campaign Summary</h2>
+    <div class="block">
+      <p>Aviator Gear is running the <strong>Design Your Freedom Patch</strong> contest through May. Followers submit an entry in one of two ways.</p>
+      <ul class="tight">
+        <li><strong>Design from scratch.</strong> Create a new Freedom-themed patch concept.</li>
+        <li><strong>Convert an existing patch.</strong> Send in the unit patch they already have. Aviator Gear adapts it into a Freedom Patch concept for them.</li>
+      </ul>
+      <p style="margin-top: 14px;">The <strong>"you don't have to start from zero"</strong> angle is the strategic core of this campaign. Every reel should make it clear that both entry paths exist.</p>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">Prize · What They're Winning</div>
+      <p><strong>50 free patches</strong> of the winning design, produced by Aviator Gear.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-h2"><span class="num">02</span> Entry Mechanics</h2>
+    <p style="margin-bottom: 16px;">These should surface in on-screen text and CTAs. Don't rephrase across reels. Repetition drives clarity.</p>
+    <ul class="tight">
+      <li><strong>Instagram.</strong> Post your design or existing patch to your story and tag <span class="mono">@aviatorgear</span>.</li>
+      <li><strong>Facebook.</strong> Comment your design or existing patch on the contest post.</li>
+      <li><strong>TikTok.</strong> Post your design or existing patch, tag <span class="mono">@aviatorgear</span>, and use <span class="mono">#DesignYourFreedomPatch</span>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-h2"><span class="num">03</span> Audience · Tone · Role of Video</h2>
+    <div class="block">
+      <p><strong>Audience.</strong> Aviator Gear's existing community. Pilots, veterans, active military, aviation enthusiasts, unit members, crew families. They respond to craft, heritage, and authenticity. They do not respond to cheesy patriotic hype or contest-y hard sells.</p>
+      <p><strong>Role of video.</strong> Reels drive attention and emotional pull. Statics and carousels handle the details. The reels need to make people stop, feel the campaign, and act.</p>
+      <p><strong>Tone.</strong> Confident, proud, community-oriented. Tasteful patriotism, not jingoistic, not Fourth-of-July-ad energy. Restraint over loudness. Think: a pilot talking to another pilot, not a marketer shouting.</p>
+    </div>
+
+    <div class="do-not">
+      <div class="do-not-label">Do Not</div>
+      <ul>
+        <li><strong>Do not reference the "20% more" promotion.</strong> That's paid messaging and is not part of the organic campaign.</li>
+        <li>Do not overplay red, white, and blue iconography. Avoid generic Fourth-of-July stock vibe.</li>
+        <li>Do not make it feel like a giveaway. This is a craft-forward design contest.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-h2"><span class="num">04</span> Shared Production Notes</h2>
+    <ul class="tight">
+      <li>Subtitle all spoken or VO content. 80%+ view with sound off.</li>
+      <li>Consistent Aviator Gear logo end card across all four reels.</li>
+      <li>Consistent font family and type treatment across the set. One visual language.</li>
+      <li>Music: library and licensed tracks only. Avoid viral TikTok audio that gets flagged on IG.</li>
+      <li><strong>Deliver Reel 1 in three cuts: 15s, 22s, and 30s</strong> for platform testing.</li>
+      <li>Final files: 9:16 MP4 (H.264, 1080x1920) plus captioned SRT.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-h2"><span class="num">05</span> The Four Reels</h2>
+
+    <div class="reel-grid">
+
+      <!-- ===== REEL 1 ===== -->
+      <article class="reel">
+        <div class="reel-header">
+          <div class="reel-tag">
+            <span class="reel-num">Reel 01</span>
+            <h3 class="reel-title">Contest Launch</h3>
+          </div>
+          <div class="reel-meta">
+            <strong>Delivery · May 1</strong>
+            Duration: 15 to 25s (15 / 22 / 30s cuts)
+          </div>
+        </div>
+        <div class="reel-body">
+
+          <div class="reel-row">
+            <div class="reel-row-label">Objective</div>
+            <div class="reel-row-body">Launch the campaign. Make both entry paths clear inside the first 15 seconds.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Takeaway</div>
+            <div class="reel-row-body">"Aviator Gear is running a Freedom Patch contest. I can either design one from scratch or have them adapt my existing one."</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Hook Options</div>
+            <div class="reel-row-body">
+              <span class="hook-option">"Design your own Freedom Patch. Or let us adapt yours."</span>
+              <span class="hook-option">"You don't have to start from zero."</span>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Concept</div>
+            <div class="reel-row-body">Fast, confident opening. Tactile craft shots. Hard pivot to the two entry paths. Land on prize and deadline.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Shot List</div>
+            <div class="reel-row-body">
+              <ol>
+                <li>Close-up: patch being stitched (macro, satisfying texture).</li>
+                <li>Hands holding an existing unit patch, close-up on the detail.</li>
+                <li>Pen sketching a new design on paper.</li>
+                <li>Aviator Gear product in motion (flight jacket, patches visible).</li>
+                <li>American flag detail, restrained, not overplayed.</li>
+                <li>Close-up: finished Freedom-themed patch on a garment.</li>
+                <li>Stack of patches, a quantity shot that pays off the 50-patch prize.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">On-Screen Text</div>
+            <div class="reel-row-body">
+              <table class="timing">
+                <tr><td class="ts">0 to 2s</td><td><strong>DESIGN YOUR FREEDOM PATCH</strong></td></tr>
+                <tr><td class="ts">3 to 6s</td><td>Design from scratch.</td></tr>
+                <tr><td class="ts">7 to 10s</td><td>Or send us your unit patch.</td></tr>
+                <tr><td class="ts">11 to 13s</td><td>We'll adapt it.</td></tr>
+                <tr><td class="ts">14 to 17s</td><td>Winner gets 50 free patches.</td></tr>
+                <tr><td class="ts">18 to 21s</td><td>Deadline: May 24.</td></tr>
+                <tr><td class="ts">End card</td><td>@aviatorgear · #DesignYourFreedomPatch</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Voiceover (optional)</div>
+            <div class="reel-row-body">
+              <div class="vo-block">Two ways to enter. Design your own Freedom Patch, or send us the one you've already got, and we'll work it into something new. Winner takes home 50.</div>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">CTA</div>
+            <div class="reel-row-body">Tag @aviatorgear with your entry.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Pacing / Music</div>
+            <div class="reel-row-body">Upbeat but restrained. Drumline, cinematic, or modern Americana. Not hype EDM.</div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ===== REEL 2 ===== -->
+      <article class="reel">
+        <div class="reel-header">
+          <div class="reel-tag">
+            <span class="reel-num">Reel 02</span>
+            <h3 class="reel-title">Patch Inspiration</h3>
+          </div>
+          <div class="reel-meta">
+            <strong>Delivery · May 8</strong>
+            Duration: 20 to 30s
+          </div>
+        </div>
+        <div class="reel-body">
+
+          <div class="reel-row">
+            <div class="reel-row-label">Objective</div>
+            <div class="reel-row-body">Spark ideas for anyone still stuck on "I don't know what to design."</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Takeaway</div>
+            <div class="reel-row-body">"Oh. That's the kind of thing I could actually make."</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Hook Options</div>
+            <div class="reel-row-body">
+              <span class="hook-option">"Stuck on what to design?"</span>
+              <span class="hook-option">"A Freedom Patch doesn't need a flag on it."</span>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Concept</div>
+            <div class="reel-row-body">Visual moodboard in motion. Classic motifs, unit heritage, color range, typography. Approachable and broad. Even a rough sketch could win.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Shot List</div>
+            <div class="reel-row-body">
+              <ol>
+                <li>Close-ups of historic military and aviation patches. Stars, eagles, stencil type.</li>
+                <li>Range of patch styles: detailed vs minimalist.</li>
+                <li>Color swatches in motion. Red, white, and blue alongside desert tan, olive, black and silver.</li>
+                <li>Typography examples: stencil, serif, banner text, mottos.</li>
+                <li>Overhead: a pen sketch coming together.</li>
+                <li>Final patch shot, the "payoff" hero image.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">On-Screen Text</div>
+            <div class="reel-row-body">
+              <table class="timing">
+                <tr><td class="ts">0 to 3s</td><td>Stuck on what to design?</td></tr>
+                <tr><td class="ts">4 to 6s</td><td>Start simple.</td></tr>
+                <tr><td class="ts">7 to 10s</td><td>Stars. Stripes. Banners.</td></tr>
+                <tr><td class="ts">11 to 14s</td><td>Or your call sign. Your unit. Your story.</td></tr>
+                <tr><td class="ts">15 to 18s</td><td>Pick one thing. Tell it well.</td></tr>
+                <tr><td class="ts">19 to 22s</td><td>Deadline: May 24.</td></tr>
+                <tr><td class="ts">End card</td><td>@aviatorgear · #DesignYourFreedomPatch</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Voiceover (optional)</div>
+            <div class="reel-row-body">
+              <div class="vo-block">A good patch is specific. Pick one story: your unit, your call sign, your squadron, your own mark on this thing. Tell it well. That's it.</div>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">CTA</div>
+            <div class="reel-row-body">Tag @aviatorgear. Deadline May 24.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Pacing / Music</div>
+            <div class="reel-row-body">Mid-tempo, reflective but not slow. Anthemic indie or clean cinematic.</div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ===== REEL 3 ===== -->
+      <article class="reel">
+        <div class="reel-header">
+          <div class="reel-tag">
+            <span class="reel-num">Reel 03</span>
+            <h3 class="reel-title">Existing Patch to Freedom Patch</h3>
+          </div>
+          <div class="reel-meta">
+            <strong>Delivery · May 15</strong>
+            Duration: 20 to 30s
+          </div>
+        </div>
+        <div class="reel-body">
+
+          <div class="reel-row">
+            <div class="reel-row-label">Objective</div>
+            <div class="reel-row-body">Hammer the "you don't have to design from scratch" angle. Show the adaptation process. <strong>This is the strategically most important reel of the four.</strong></div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Takeaway</div>
+            <div class="reel-row-body">"Wait. They'll do the work? I can just send my existing patch in?"</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Hook Options</div>
+            <div class="reel-row-body">
+              <span class="hook-option">"Already got a patch you love?"</span>
+              <span class="hook-option">"Send us your unit patch. We'll Freedom-ify it."</span>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Concept</div>
+            <div class="reel-row-body">Show the conversion process. Start with an existing unit patch, layer sketch overlays and color studies, end on a finished Freedom-themed version. Feels like watching a craft unfold. Satisfying, tactile.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Shot List</div>
+            <div class="reel-row-body">
+              <ol>
+                <li>Existing unit patch laid flat, close-up.</li>
+                <li>Sketch paper or tablet screen with design overlays on top of the patch.</li>
+                <li>Hand marking up or annotating the patch.</li>
+                <li>Color studies: multiple Freedom-themed options side by side.</li>
+                <li>Final adapted patch. The Freedom version.</li>
+                <li>Before and after reveal (split-screen or transition).</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">On-Screen Text</div>
+            <div class="reel-row-body">
+              <table class="timing">
+                <tr><td class="ts">0 to 3s</td><td>Already got a patch you love?</td></tr>
+                <tr><td class="ts">4 to 7s</td><td>Send it our way.</td></tr>
+                <tr><td class="ts">8 to 11s</td><td>We'll adapt it.</td></tr>
+                <tr><td class="ts">12 to 15s</td><td>Into a Freedom Patch concept.</td></tr>
+                <tr><td class="ts">16 to 18s</td><td>No redesign. No pressure.</td></tr>
+                <tr><td class="ts">19 to 22s</td><td>Winner gets 50 free patches.</td></tr>
+                <tr><td class="ts">23 to 26s</td><td>Deadline: May 24.</td></tr>
+                <tr><td class="ts">End card</td><td>@aviatorgear · #DesignYourFreedomPatch</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Voiceover (optional)</div>
+            <div class="reel-row-body">
+              <div class="vo-block">You don't have to start from zero. If you've already got a patch you love, squadron, unit, whatever it is, send it to us. We'll work it into a Freedom Patch concept for you. That's the whole pitch.</div>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">CTA</div>
+            <div class="reel-row-body">IG story, FB comment, or TikTok post. Tag @aviatorgear.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Pacing / Music</div>
+            <div class="reel-row-body">Slightly slower, craft-focused. Let the before and after reveal land.</div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ===== REEL 4 ===== -->
+      <article class="reel">
+        <div class="reel-header">
+          <div class="reel-tag">
+            <span class="reel-num">Reel 04</span>
+            <h3 class="reel-title">Deadline · Urgency</h3>
+          </div>
+          <div class="reel-meta">
+            <strong>Delivery · May 22</strong>
+            Duration: 12 to 20s
+          </div>
+        </div>
+        <div class="reel-body">
+
+          <div class="reel-row">
+            <div class="reel-row-label">Objective</div>
+            <div class="reel-row-body">Final push. Land remaining submissions before the May 24 deadline.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Takeaway</div>
+            <div class="reel-row-body">"Deadline's this weekend. If I'm entering, it's now."</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Hook Options</div>
+            <div class="reel-row-body">
+              <span class="hook-option">"Two days left."</span>
+              <span class="hook-option">"Clock's running on the Freedom Patch contest."</span>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Concept</div>
+            <div class="reel-row-body">Short. Tight. Urgent. Text-heavy. Countdown energy without cheese.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Shot List</div>
+            <div class="reel-row-body">
+              <ol>
+                <li>Ticking clock or sand timer (stock).</li>
+                <li>Stack of patches. Prize visual.</li>
+                <li>Close-up: unit patch being held.</li>
+                <li>Sketch being finalized.</li>
+                <li>Final patch shot. Payoff.</li>
+                <li>Metaphorical "submission" moment (envelope, upload screen, etc.).</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">On-Screen Text</div>
+            <div class="reel-row-body">
+              <table class="timing">
+                <tr><td class="ts">0 to 2s</td><td><strong>DEADLINE</strong></td></tr>
+                <tr><td class="ts">3 to 5s</td><td>May 24, 11:59 PM CT.</td></tr>
+                <tr><td class="ts">6 to 8s</td><td>Design from scratch.</td></tr>
+                <tr><td class="ts">9 to 11s</td><td>Or send your existing patch.</td></tr>
+                <tr><td class="ts">12 to 14s</td><td>Winner gets 50 free patches.</td></tr>
+                <tr><td class="ts">15 to 17s</td><td>IG story, FB comment, or TikTok.</td></tr>
+                <tr><td class="ts">End card</td><td>@aviatorgear · #DesignYourFreedomPatch</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Voiceover (optional)</div>
+            <div class="reel-row-body">
+              <div class="vo-block">Sunday night. That's it. If you've got something, send it.</div>
+            </div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">CTA</div>
+            <div class="reel-row-body">Tag @aviatorgear by May 24, 11:59 PM CT.</div>
+          </div>
+
+          <div class="reel-row">
+            <div class="reel-row-label">Pacing / Music</div>
+            <div class="reel-row-body">Fast, percussion-forward, urgent. Still restrained. No cheese.</div>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-h2"><span class="num">06</span> Deliverables Checklist</h2>
+    <ul class="checklist">
+      <li><span class="box"></span><div>Reel 1 (May 1). 15s, 22s, and 30s cuts.</div></li>
+      <li><span class="box"></span><div>Reel 2 (May 8).</div></li>
+      <li><span class="box"></span><div>Reel 3 (May 15).</div></li>
+      <li><span class="box"></span><div>Reel 4 (May 22).</div></li>
+      <li><span class="box"></span><div>All files: 9:16, 1080x1920, H.264 MP4.</div></li>
+      <li><span class="box"></span><div>SRT captions for each.</div></li>
+      <li><span class="box"></span><div>Aviator Gear end card applied consistently across all four.</div></li>
+      <li><span class="box"></span><div>Zero references to the "20% more" promotion anywhere.</div></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-h2"><span class="num">07</span> Open Questions</h2>
+    <ul class="tight">
+      <li>Confirm Dropbox access before May 1.</li>
+      <li>Any existing Aviator Gear brand intro or outro lockup to match?</li>
+      <li>Any units or patches in the Dropbox that should <em>not</em> be featured publicly (licensed or restricted content)?</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <strong>Aviator Gear</strong><br>
+      aviatorgear.com · Your Online Wingman
+    </div>
+    <div style="text-align: right;">
+      <strong>Campaign</strong><br>
+      Design Your Freedom Patch · May 2026
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
