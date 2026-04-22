@@ -24,485 +24,102 @@
     --rule: #d6d7d8;
     --red: #b0302b;
   }
-
   * { box-sizing: border-box; }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 15px;
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1, h2, h3, h4, .display {
-    font-family: 'Oswald', 'Arial Narrow', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-  }
-
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  h1, h2, h3, h4, .display { font-family: 'Oswald', 'Arial Narrow', sans-serif; font-weight: 600; letter-spacing: 0.02em; }
   .mono { font-family: 'SFMono-Regular', 'Menlo', 'Consolas', monospace; }
 
-  header.brand {
-    background: var(--charcoal);
-    color: #fff;
-    border-bottom: 4px solid var(--orange);
-  }
-
-  .brand-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 22px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-  }
-
+  header.brand { background: var(--charcoal); color: #fff; border-bottom: 4px solid var(--orange); }
+  .brand-inner { max-width: 1000px; margin: 0 auto; padding: 22px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
   .brand-logo img { height: 52px; width: auto; display: block; }
-
-  .brand-meta {
-    font-family: 'Inter', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    text-align: right;
-    color: rgba(255,255,255,0.75);
-    line-height: 1.7;
-  }
-
-  .brand-meta strong {
-    display: block;
-    color: var(--orange);
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    font-size: 11px;
-    margin-bottom: 2px;
-  }
+  .brand-meta { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; text-align: right; color: rgba(255,255,255,0.75); line-height: 1.7; }
+  .brand-meta strong { display: block; color: var(--orange); font-weight: 600; letter-spacing: 0.18em; font-size: 11px; margin-bottom: 2px; }
 
   .doc-title { max-width: 1000px; margin: 0 auto; padding: 56px 40px 28px; }
-
-  .eyebrow {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--orange);
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--orange);
-    margin-bottom: 18px;
-  }
-
-  h1.doc-h1 {
-    font-size: 52px;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: var(--charcoal);
-    margin: 0 0 10px;
-    line-height: 1.05;
-  }
-
+  .eyebrow { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--orange); padding-bottom: 10px; border-bottom: 2px solid var(--orange); margin-bottom: 18px; }
+  h1.doc-h1 { font-size: 52px; font-weight: 700; letter-spacing: 0.01em; text-transform: uppercase; color: var(--charcoal); margin: 0 0 10px; line-height: 1.05; }
   .doc-sub { font-size: 17px; color: var(--steel); margin: 0; max-width: 680px; }
 
   .fact-sheet { max-width: 1000px; margin: 28px auto 0; padding: 0 40px; }
-
-  .facts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-  }
-
+  .facts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
   .fact { background: var(--card); padding: 18px 22px; }
-
-  .fact-label {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-    color: var(--orange);
-    margin-bottom: 6px;
-  }
-
-  .fact-value {
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--charcoal);
-    letter-spacing: 0.02em;
-  }
-
+  .fact-label { font-size: 10px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--orange); margin-bottom: 6px; }
+  .fact-value { font-family: 'Oswald', sans-serif; font-size: 18px; font-weight: 500; color: var(--charcoal); letter-spacing: 0.02em; }
   .fact-value.small { font-size: 14px; line-height: 1.35; }
 
   main { max-width: 1000px; margin: 0 auto; padding: 0 40px 80px; }
-
   section { margin-top: 56px; }
+  h2.section-h2 { font-size: 22px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--charcoal); margin: 0 0 18px; padding-bottom: 12px; border-bottom: 2px solid var(--charcoal); display: flex; align-items: baseline; gap: 16px; }
+  h2.section-h2 .num { font-size: 13px; font-weight: 500; color: var(--orange); letter-spacing: 0.28em; }
 
-  h2.section-h2 {
-    font-size: 22px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.14em;
-    color: var(--charcoal);
-    margin: 0 0 18px;
-    padding-bottom: 12px;
-    border-bottom: 2px solid var(--charcoal);
-    display: flex;
-    align-items: baseline;
-    gap: 16px;
-  }
+  .block p { margin: 0 0 12px; } .block p:last-child { margin-bottom: 0; }
 
-  h2.section-h2 .num {
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--orange);
-    letter-spacing: 0.28em;
-  }
-
-  .block p { margin: 0 0 12px; }
-  .block p:last-child { margin-bottom: 0; }
-
-  .callout {
-    background: var(--charcoal);
-    color: #fff;
-    padding: 22px 26px;
-    border-left: 4px solid var(--orange);
-    margin: 24px 0;
-    border-radius: 2px;
-  }
-
-  .callout-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--orange);
-    margin-bottom: 8px;
-  }
-
+  .callout { background: var(--charcoal); color: #fff; padding: 22px 26px; border-left: 4px solid var(--orange); margin: 24px 0; border-radius: 2px; }
+  .callout-label { font-family: 'Oswald', sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--orange); margin-bottom: 8px; }
   .callout p { margin: 0; font-size: 15px; line-height: 1.6; }
 
-  .do-not {
-    background: #fdf4f3;
-    border-left: 4px solid var(--red);
-    padding: 20px 24px;
-    margin: 24px 0;
-  }
+  .do-not { background: #fdf4f3; border-left: 4px solid var(--red); padding: 20px 24px; margin: 24px 0; }
+  .do-not-label { font-family: 'Oswald', sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--red); margin-bottom: 10px; font-weight: 600; }
+  .do-not ul { margin: 0; padding-left: 20px; } .do-not li { margin-bottom: 6px; } .do-not li:last-child { margin-bottom: 0; }
 
-  .do-not-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--red);
-    margin-bottom: 10px;
-    font-weight: 600;
-  }
+  ul.tight { padding-left: 22px; margin: 0; } ul.tight li { margin-bottom: 6px; } ul.tight li:last-child { margin-bottom: 0; }
 
-  .do-not ul { margin: 0; padding-left: 20px; }
-  .do-not li { margin-bottom: 6px; }
-  .do-not li:last-child { margin-bottom: 0; }
-
-  ul.tight { padding-left: 22px; margin: 0; }
-  ul.tight li { margin-bottom: 6px; }
-  ul.tight li:last-child { margin-bottom: 0; }
-
-  table.calendar {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 16px;
-    font-size: 14px;
-  }
-
-  table.calendar th {
-    background: var(--charcoal);
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 12px 16px;
-  }
-
+  table.calendar { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+  table.calendar th { background: var(--charcoal); color: #fff; font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; text-align: left; padding: 12px 16px; }
   table.calendar th:first-child { color: var(--orange); }
-
-  table.calendar td {
-    padding: 14px 16px;
-    background: var(--card);
-    border-bottom: 1px solid var(--rule);
-    vertical-align: top;
-  }
-
-  table.calendar td.week-label {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    color: var(--charcoal);
-    letter-spacing: 0.05em;
-    width: 130px;
-    white-space: nowrap;
-  }
-
+  table.calendar td { padding: 14px 16px; background: var(--card); border-bottom: 1px solid var(--rule); vertical-align: top; }
+  table.calendar td.week-label { font-family: 'Oswald', sans-serif; font-weight: 600; color: var(--charcoal); letter-spacing: 0.05em; width: 160px; white-space: nowrap; }
   table.calendar tr:last-child td { border-bottom: none; }
   table.calendar td em { color: var(--steel); font-style: normal; font-size: 13px; }
 
-  .week-card {
-    background: var(--card);
-    border: 1px solid var(--rule);
-    border-top: 5px solid var(--orange);
-    page-break-inside: avoid;
-    margin-bottom: 32px;
-  }
-
-  .week-card-header {
-    background: var(--charcoal);
-    color: #fff;
-    padding: 18px 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-
+  .week-card { background: var(--card); border: 1px solid var(--rule); border-top: 5px solid var(--orange); page-break-inside: avoid; margin-bottom: 32px; }
+  .week-card-header { background: var(--charcoal); color: #fff; padding: 18px 28px; display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
   .week-card-header .week-tag { display: flex; align-items: baseline; gap: 14px; }
-
-  .week-card-header .week-num {
-    font-family: 'Oswald', sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    color: var(--orange);
-    text-transform: uppercase;
-  }
-
-  .week-card-header h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    color: #fff;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  .week-card-header .week-reel-ref {
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.85);
-    text-align: right;
-    line-height: 1.5;
-  }
-
+  .week-card-header .week-num { font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.3em; color: var(--orange); text-transform: uppercase; }
+  .week-card-header h3 { font-family: 'Oswald', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: 0.05em; color: #fff; text-transform: uppercase; margin: 0; }
+  .week-card-header .week-reel-ref { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.85); text-align: right; line-height: 1.5; }
   .week-card-header .week-reel-ref strong { color: var(--orange); font-weight: 600; }
-
   .week-card-body { padding: 28px 28px 32px; }
 
-  .asset-block { margin-bottom: 32px; }
-  .asset-block:last-child { margin-bottom: 0; }
-
-  .asset-header {
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-    margin-bottom: 16px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--paper-dark);
-  }
-
-  .asset-type-badge {
-    font-family: 'Oswald', sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-    color: #fff;
-    background: var(--orange);
-    padding: 4px 10px;
-    border-radius: 2px;
-  }
-
+  .asset-block { margin-bottom: 32px; } .asset-block:last-child { margin-bottom: 0; }
+  .asset-header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--paper-dark); }
+  .asset-type-badge { font-family: 'Oswald', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #fff; background: var(--orange); padding: 4px 10px; border-radius: 2px; }
   .asset-type-badge.carousel { background: var(--charcoal); }
+  .asset-name { font-family: 'Oswald', sans-serif; font-size: 17px; font-weight: 600; color: var(--charcoal); letter-spacing: 0.04em; text-transform: uppercase; margin: 0; }
+  .asset-role { font-size: 12px; color: var(--steel); font-style: italic; margin-left: auto; letter-spacing: 0.04em; }
 
-  .asset-name {
-    font-family: 'Oswald', sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--charcoal);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  .asset-role {
-    font-size: 12px;
-    color: var(--steel);
-    font-style: italic;
-    margin-left: auto;
-    letter-spacing: 0.04em;
-  }
-
-  .asset-row {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 20px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--paper-dark);
-  }
-
+  .asset-row { display: grid; grid-template-columns: 140px 1fr; gap: 20px; padding: 12px 0; border-bottom: 1px solid var(--paper-dark); }
   .asset-row:last-child { border-bottom: none; }
-
-  .asset-row-label {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
-    color: var(--orange);
-    padding-top: 3px;
-  }
-
+  .asset-row-label { font-size: 10px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--orange); padding-top: 3px; }
   .asset-row-body { font-size: 14.5px; line-height: 1.6; }
 
-  .on-image-mock {
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    border-left: 4px solid var(--orange);
-    padding: 20px 24px;
-    border-radius: 2px;
-  }
+  .on-image-mock { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--orange); padding: 20px 24px; border-radius: 2px; }
+  .on-image-mock .oim-headline { font-family: 'Oswald', sans-serif; font-size: 22px; font-weight: 700; color: var(--charcoal); text-transform: uppercase; letter-spacing: 0.05em; margin: 0 0 6px; line-height: 1.15; }
+  .on-image-mock .oim-support { font-size: 14px; color: var(--ink); margin: 0 0 10px; line-height: 1.45; }
+  .on-image-mock .oim-cta { font-family: 'Oswald', sans-serif; font-size: 11px; font-weight: 600; color: var(--orange); text-transform: uppercase; letter-spacing: 0.2em; margin: 0; }
 
-  .on-image-mock .oim-headline {
-    font-family: 'Oswald', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--charcoal);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin: 0 0 6px;
-    line-height: 1.15;
-  }
+  .caption-block { background: var(--paper); border-left: 3px solid var(--charcoal); padding: 14px 18px; font-size: 14.5px; line-height: 1.65; color: var(--ink); white-space: pre-wrap; }
+  .caption-block:before { content: "\201C"; font-size: 28px; color: var(--orange); font-family: Georgia, serif; line-height: 0; position: relative; top: 10px; margin-right: 4px; }
 
-  .on-image-mock .oim-support {
-    font-size: 14px;
-    color: var(--ink);
-    margin: 0 0 10px;
-    line-height: 1.45;
-  }
+  .comment-block { background: var(--orange-soft); border-left: 3px solid var(--orange); padding: 12px 16px; font-size: 13.5px; line-height: 1.55; color: var(--charcoal); font-style: italic; }
 
-  .on-image-mock .oim-cta {
-    font-family: 'Oswald', sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--orange);
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin: 0;
-  }
-
-  .caption-block {
-    background: var(--paper);
-    border-left: 3px solid var(--charcoal);
-    padding: 14px 18px;
-    font-size: 14.5px;
-    line-height: 1.65;
-    color: var(--ink);
-    white-space: pre-wrap;
-  }
-
-  .caption-block:before {
-    content: "\201C";
-    font-size: 28px;
-    color: var(--orange);
-    font-family: Georgia, serif;
-    line-height: 0;
-    position: relative;
-    top: 10px;
-    margin-right: 4px;
-  }
-
-  .comment-block {
-    background: var(--orange-soft);
-    border-left: 3px solid var(--orange);
-    padding: 12px 16px;
-    font-size: 13.5px;
-    line-height: 1.55;
-    color: var(--charcoal);
-    font-style: italic;
-  }
-
-  .slides-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 12px;
-    margin-top: 6px;
-  }
-
-  .slide {
-    background: var(--paper);
-    border: 1px solid var(--rule);
-    border-top: 3px solid var(--orange);
-    padding: 14px 16px;
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
-  .slide-num {
-    font-family: 'Oswald', sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--orange);
-    margin-bottom: 6px;
-  }
-
-  .slide-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--charcoal);
-    margin: 0 0 6px;
-  }
-
+  .slides-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 6px; }
+  .slide { background: var(--paper); border: 1px solid var(--rule); border-top: 3px solid var(--orange); padding: 14px 16px; font-size: 13px; line-height: 1.5; }
+  .slide-num { font-family: 'Oswald', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--orange); margin-bottom: 6px; }
+  .slide-title { font-family: 'Oswald', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--charcoal); margin: 0 0 6px; }
   .slide-body { color: var(--ink); }
-
   .slide.cover { background: var(--charcoal); color: #fff; border-top-color: var(--orange); }
   .slide.cover .slide-num { color: var(--orange); }
   .slide.cover .slide-title { color: #fff; }
   .slide.cover .slide-body { color: rgba(255,255,255,0.88); }
-
   .slide.cta { background: var(--orange-soft); border-top-color: var(--orange); }
 
-  footer {
-    background: var(--charcoal);
-    color: rgba(255,255,255,0.78);
-    padding: 36px 40px;
-    border-top: 4px solid var(--orange);
-    margin-top: 80px;
-  }
+  .rush-banner { background: var(--red); color: #fff; padding: 18px 26px; margin: 24px 0; border-radius: 2px; display: flex; align-items: center; gap: 16px; }
+  .rush-banner .rush-label { font-family: 'Oswald', sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; background: rgba(0,0,0,0.25); padding: 4px 10px; border-radius: 2px; flex-shrink: 0; font-weight: 600; }
+  .rush-banner p { margin: 0; font-size: 14.5px; line-height: 1.55; }
 
-  .footer-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    flex-wrap: wrap;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-  }
-
+  footer { background: var(--charcoal); color: rgba(255,255,255,0.78); padding: 36px 40px; border-top: 4px solid var(--orange); margin-top: 80px; }
+  .footer-inner { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; font-size: 12px; letter-spacing: 0.1em; }
   .footer-inner strong { color: var(--orange); font-weight: 600; letter-spacing: 0.14em; }
 
   @media (max-width: 720px) {
@@ -544,19 +161,24 @@
 <div class="doc-title">
   <div class="eyebrow">Campaign Playbook · VA Execution Guide</div>
   <h1 class="doc-h1">Design Your Freedom Patch</h1>
-  <p class="doc-sub">Compressed two-week rollout. Three statics, three carousels, two reels across IG, FB, and TikTok from May 1 through May 18. Every asset mapped, scripted, and ready to build.</p>
+  <p class="doc-sub">Accelerated ten-day rollout. Two reels, three statics, two carousels across IG, FB, and TikTok from May 1 through May 11. Every asset mapped, scripted, and ready to build.</p>
+
+  <div class="rush-banner">
+    <span class="rush-label">Schedule</span>
+    <p>Campaign compressed per client. <strong>May 11 is the final post date</strong>. Deadline moved up to May 8, winner announcement May 11. Winner Spotlight carousel has been cut.</p>
+  </div>
 </div>
 
 <div class="fact-sheet">
   <div class="facts-grid">
     <div class="fact"><div class="fact-label">Client</div><div class="fact-value">Aviator Gear</div></div>
     <div class="fact"><div class="fact-label">Campaign</div><div class="fact-value small">Design Your Freedom Patch</div></div>
-    <div class="fact"><div class="fact-label">Window</div><div class="fact-value small">May 1 to May 18, 2026</div></div>
-    <div class="fact"><div class="fact-label">Submission Deadline</div><div class="fact-value small">May 15 · 11:59 PM CT</div></div>
-    <div class="fact"><div class="fact-label">Winner Announced</div><div class="fact-value small">May 18</div></div>
+    <div class="fact"><div class="fact-label">Window</div><div class="fact-value small">May 1 to May 11, 2026</div></div>
+    <div class="fact"><div class="fact-label">Submission Deadline</div><div class="fact-value small">May 8 · 11:59 PM CT</div></div>
+    <div class="fact"><div class="fact-label">Winner Announced</div><div class="fact-value small">May 11 (final post)</div></div>
     <div class="fact"><div class="fact-label">Reels</div><div class="fact-value">2</div></div>
     <div class="fact"><div class="fact-label">Statics</div><div class="fact-value">3</div></div>
-    <div class="fact"><div class="fact-label">Carousels</div><div class="fact-value">3 (1 optional)</div></div>
+    <div class="fact"><div class="fact-label">Carousels</div><div class="fact-value">2</div></div>
     <div class="fact"><div class="fact-label">Hashtag</div><div class="fact-value small">#DesignYourFreedomPatch</div></div>
   </div>
 </div>
@@ -566,12 +188,12 @@
   <section>
     <h2 class="section-h2"><span class="num">01</span> Campaign Summary</h2>
     <div class="block">
-      <p>Aviator Gear is running a two-week <strong>Design Your Freedom Patch</strong> contest. Followers submit an entry in one of two ways.</p>
+      <p>Aviator Gear is running a ten-day <strong>Design Your Freedom Patch</strong> contest. Followers submit an entry in one of two ways.</p>
       <ul class="tight">
         <li><strong>Design from scratch.</strong> Create a new Freedom-themed patch concept.</li>
         <li><strong>Convert an existing patch.</strong> Send in the unit patch they already have. Aviator Gear adapts it into a Freedom Patch concept for them.</li>
       </ul>
-      <p style="margin-top: 14px;">The <strong>"you don't have to start from zero"</strong> angle is the strategic core. With fewer assets than originally planned, both entry paths must appear in every post.</p>
+      <p style="margin-top: 14px;">The <strong>"you don't have to start from zero"</strong> angle is the strategic core. With this compressed schedule, both entry paths must appear in every post.</p>
     </div>
 
     <div class="callout">
@@ -592,11 +214,11 @@
 
   <section>
     <h2 class="section-h2"><span class="num">03</span> Posting Calendar</h2>
-    <p>Two active campaign weeks plus a winner week. Each asset below pairs with the matching reel from the videographer brief.</p>
+    <p>Three phases across ten days. Last post is the winner announcement on May 11.</p>
     <table class="calendar">
       <thead>
         <tr>
-          <th>Week</th>
+          <th>Phase</th>
           <th>Reel</th>
           <th>Static</th>
           <th>Carousel</th>
@@ -604,22 +226,22 @@
       </thead>
       <tbody>
         <tr>
-          <td class="week-label">May 1</td>
-          <td>Contest launch <em>(see videographer brief)</em></td>
-          <td>01 Announcement</td>
-          <td>01 How it works</td>
+          <td class="week-label">Launch (May 1 to 4)</td>
+          <td>Fri May 1, Contest launch</td>
+          <td>Fri May 1, 01 Announcement</td>
+          <td>Mon May 4, 01 How it works</td>
         </tr>
         <tr>
-          <td class="week-label">May 11</td>
-          <td>Deadline urgency</td>
-          <td>02 Final reminder</td>
-          <td>02 Last chance</td>
+          <td class="week-label">Deadline Push (May 6 to 8)</td>
+          <td>Wed May 6, Deadline push</td>
+          <td>Thu May 7, 02 Final reminder</td>
+          <td>Fri May 8, 02 Last chance</td>
         </tr>
         <tr>
-          <td class="week-label">May 18</td>
+          <td class="week-label">Winner (May 11)</td>
           <td>None</td>
-          <td>03 Winner announcement</td>
-          <td>03 Winner spotlight <em>(optional)</em></td>
+          <td>Mon May 11, 03 Winner announcement</td>
+          <td>None <em>(spotlight cut)</em></td>
         </tr>
       </tbody>
     </table>
@@ -639,33 +261,32 @@
     <ul class="tight" style="margin-top: 20px;">
       <li>Use <span class="mono">#DesignYourFreedomPatch</span> consistently in every caption.</li>
       <li>Tone: confident, proud, community-oriented. Restraint over loudness.</li>
-      <li>Start screenshotting tagged submissions on May 2 so the winner spotlight carousel has a visual bank ready.</li>
+      <li>Start screenshotting tagged submissions on May 2. Client will need a visual bank ready by Sunday May 10 to select the winner.</li>
     </ul>
   </section>
 
-  <!-- ======== WEEK OF MAY 1 ======== -->
+  <!-- ======== LAUNCH PHASE ======== -->
   <section>
-    <h2 class="section-h2"><span class="num">05</span> Week of May 1</h2>
+    <h2 class="section-h2"><span class="num">05</span> Launch Phase · May 1 to 4</h2>
 
     <div class="week-card">
       <div class="week-card-header">
         <div class="week-tag">
-          <span class="week-num">Week 01</span>
-          <h3>Launch Week</h3>
+          <span class="week-num">Phase 01</span>
+          <h3>Launch</h3>
         </div>
         <div class="week-reel-ref">
           <strong>Reel · Contest Launch</strong>
-          See videographer brief
+          Posts Fri May 1
         </div>
       </div>
       <div class="week-card-body">
 
-        <!-- Static 1 -->
         <div class="asset-block">
           <div class="asset-header">
             <span class="asset-type-badge">Static 01</span>
             <h4 class="asset-name">Contest Announcement</h4>
-            <span class="asset-role">Anchor post. Launches the campaign.</span>
+            <span class="asset-role">Posts Fri May 1. Anchor post.</span>
           </div>
 
           <div class="asset-row">
@@ -696,7 +317,7 @@ IG, post your design or existing patch to your story and tag @aviatorgear
 FB, comment your design or existing patch on this post
 TikTok, post your design or existing patch, tag @aviatorgear with #DesignYourFreedomPatch
 
-Submissions close May 15 at 11:59 PM CT. Winner announced May 18.</div>
+Submissions close May 8 at 11:59 PM CT. Winner announced May 11.</div>
             </div>
           </div>
 
@@ -708,12 +329,11 @@ Submissions close May 15 at 11:59 PM CT. Winner announced May 18.</div>
           </div>
         </div>
 
-        <!-- Carousel 1 -->
         <div class="asset-block">
           <div class="asset-header">
             <span class="asset-type-badge carousel">Carousel 01</span>
             <h4 class="asset-name">How the Contest Works</h4>
-            <span class="asset-role">Explainer. Covers mechanics, prize, and the redesign-vs-reorder distinction.</span>
+            <span class="asset-role">Posts Mon May 4. Explainer plus redesign-vs-reorder clarification.</span>
           </div>
 
           <div class="asset-row">
@@ -748,7 +368,7 @@ Submissions close May 15 at 11:59 PM CT. Winner announced May 18.</div>
                 <div class="slide">
                   <div class="slide-num">Slide 06</div>
                   <h5 class="slide-title">Timeline</h5>
-                  <div class="slide-body">Launch: May 1. Deadline: May 15, 11:59 PM CT. Winner: May 18.</div>
+                  <div class="slide-body">Launch: May 1. Deadline: May 8, 11:59 PM CT. Winner: May 11.</div>
                 </div>
                 <div class="slide cta">
                   <div class="slide-num">Slide 07 · CTA</div>
@@ -766,7 +386,7 @@ Submissions close May 15 at 11:59 PM CT. Winner announced May 18.</div>
 
 And heads up, this is a redesign contest, not a reorder. If you send your existing patch, we adapt it into a Freedom concept.
 
-Submissions close May 15. Winner takes home 50 free patches.</div>
+Submissions close May 8. Winner takes home 50 free patches.</div>
             </div>
           </div>
         </div>
@@ -775,37 +395,36 @@ Submissions close May 15. Winner takes home 50 free patches.</div>
     </div>
   </section>
 
-  <!-- ======== WEEK OF MAY 11 ======== -->
+  <!-- ======== DEADLINE PHASE ======== -->
   <section>
-    <h2 class="section-h2"><span class="num">06</span> Week of May 11</h2>
+    <h2 class="section-h2"><span class="num">06</span> Deadline Push · May 6 to 8</h2>
 
     <div class="week-card">
       <div class="week-card-header">
         <div class="week-tag">
-          <span class="week-num">Week 02</span>
-          <h3>Deadline Week</h3>
+          <span class="week-num">Phase 02</span>
+          <h3>Deadline Push</h3>
         </div>
         <div class="week-reel-ref">
           <strong>Reel · Deadline Final Push</strong>
-          See videographer brief
+          Posts Wed May 6
         </div>
       </div>
       <div class="week-card-body">
 
-        <!-- Static 2 -->
         <div class="asset-block">
           <div class="asset-header">
             <span class="asset-type-badge">Static 02</span>
             <h4 class="asset-name">Final Reminder</h4>
-            <span class="asset-role">Urgency without cheese.</span>
+            <span class="asset-role">Posts Thu May 7. Urgency without cheese.</span>
           </div>
 
           <div class="asset-row">
             <div class="asset-row-label">On-Image Copy</div>
             <div class="asset-row-body">
               <div class="on-image-mock">
-                <p class="oim-headline">Deadline Friday</p>
-                <p class="oim-support">Submissions close May 15, 11:59 PM CT.</p>
+                <p class="oim-headline">Deadline Tomorrow</p>
+                <p class="oim-support">Submissions close May 8, 11:59 PM CT.</p>
                 <p class="oim-cta">Tag @aviatorgear before Friday night.</p>
               </div>
             </div>
@@ -816,9 +435,9 @@ Submissions close May 15. Winner takes home 50 free patches.</div>
             <div class="asset-row-body">
               <div class="caption-block">Final stretch.
 
-Design from scratch or send us your existing patch to adapt. Either way, deadline's Friday night.
+Design from scratch or send us your existing patch to adapt. Either way, deadline's tomorrow night.
 
-Submissions close May 15 at 11:59 PM CT. Winner announced May 18.
+Submissions close May 8 at 11:59 PM CT. Winner announced May 11.
 
 IG story, FB comment, or TikTok. Tag @aviatorgear.
 #DesignYourFreedomPatch</div>
@@ -826,12 +445,11 @@ IG story, FB comment, or TikTok. Tag @aviatorgear.
           </div>
         </div>
 
-        <!-- Carousel 2 -->
         <div class="asset-block">
           <div class="asset-header">
             <span class="asset-type-badge carousel">Carousel 02</span>
             <h4 class="asset-name">Last Chance</h4>
-            <span class="asset-role">Countdown push. Recaps paths, prize, and deadline.</span>
+            <span class="asset-role">Posts Fri May 8 (day of deadline).</span>
           </div>
 
           <div class="asset-row">
@@ -841,7 +459,7 @@ IG story, FB comment, or TikTok. Tag @aviatorgear.
                 <div class="slide cover">
                   <div class="slide-num">Slide 01 · Cover</div>
                   <h5 class="slide-title">Last Chance</h5>
-                  <div class="slide-body">Submissions close May 15</div>
+                  <div class="slide-body">Submissions close tonight</div>
                 </div>
                 <div class="slide">
                   <div class="slide-num">Slide 02</div>
@@ -856,7 +474,7 @@ IG story, FB comment, or TikTok. Tag @aviatorgear.
                 <div class="slide">
                   <div class="slide-num">Slide 04</div>
                   <h5 class="slide-title">Timeline</h5>
-                  <div class="slide-body">Deadline: May 15, 11:59 PM CT. Winner: May 18.</div>
+                  <div class="slide-body">Deadline: tonight, 11:59 PM CT. Winner: May 11.</div>
                 </div>
                 <div class="slide">
                   <div class="slide-num">Slide 05</div>
@@ -875,7 +493,7 @@ IG story, FB comment, or TikTok. Tag @aviatorgear.
           <div class="asset-row">
             <div class="asset-row-label">Caption</div>
             <div class="asset-row-body">
-              <div class="caption-block">Last chance to enter our Design Your Freedom Patch contest. Deadline Friday at 11:59 PM CT.
+              <div class="caption-block">Last chance to enter our Design Your Freedom Patch contest. Deadline tonight at 11:59 PM CT.
 
 If you've been sitting on an idea, or on a unit patch you've been meaning to do something with, this is the moment.
 
@@ -888,29 +506,28 @@ If you've been sitting on an idea, or on a unit patch you've been meaning to do 
     </div>
   </section>
 
-  <!-- ======== WEEK OF MAY 18 ======== -->
+  <!-- ======== WINNER PHASE ======== -->
   <section>
-    <h2 class="section-h2"><span class="num">07</span> Week of May 18</h2>
+    <h2 class="section-h2"><span class="num">07</span> Winner · May 11</h2>
 
     <div class="week-card">
       <div class="week-card-header">
         <div class="week-tag">
-          <span class="week-num">Week 03</span>
-          <h3>Winner Week</h3>
+          <span class="week-num">Phase 03</span>
+          <h3>Winner</h3>
         </div>
         <div class="week-reel-ref">
-          <strong>No Reel This Week</strong>
-          Static + optional carousel
+          <strong>Final Post</strong>
+          Mon May 11
         </div>
       </div>
       <div class="week-card-body">
 
-        <!-- Static 3 -->
         <div class="asset-block">
           <div class="asset-header">
             <span class="asset-type-badge">Static 03</span>
             <h4 class="asset-name">Winner Announcement</h4>
-            <span class="asset-role">Closes the loop. Celebrates.</span>
+            <span class="asset-role">Posts Mon May 11. Campaign's final post.</span>
           </div>
 
           <div class="asset-row">
@@ -926,7 +543,7 @@ If you've been sitting on an idea, or on a unit patch you've been meaning to do 
 
           <div class="asset-row">
             <div class="asset-row-label">Visual</div>
-            <div class="asset-row-body">The winning design as the centerpiece. VA assembles once selection is made.</div>
+            <div class="asset-row-body">The winning design as the centerpiece. VA assembles Sunday May 10 once client selects.</div>
           </div>
 
           <div class="asset-row">
@@ -952,67 +569,6 @@ This won't be the last one. Stay close.</div>
           </div>
         </div>
 
-        <!-- Carousel 3 (optional) -->
-        <div class="asset-block">
-          <div class="asset-header">
-            <span class="asset-type-badge carousel">Carousel 03</span>
-            <h4 class="asset-name">Winner Spotlight (Optional)</h4>
-            <span class="asset-role">Longer follow-up. Runs a few days after Static 03.</span>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">Slides</div>
-            <div class="asset-row-body">
-              <div class="slides-grid">
-                <div class="slide cover">
-                  <div class="slide-num">Slide 01 · Cover</div>
-                  <h5 class="slide-title">The Story Behind the Design</h5>
-                  <div class="slide-body">[WINNER HANDLE]'s Freedom Patch</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 02</div>
-                  <h5 class="slide-title">The Winner</h5>
-                  <div class="slide-body">[WINNER HANDLE] / [UNIT or CONTEXT]</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 03</div>
-                  <h5 class="slide-title">The Design</h5>
-                  <div class="slide-body">[FINAL DESIGN IMAGE]</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 04</div>
-                  <h5 class="slide-title">The Story</h5>
-                  <div class="slide-body">Short narrative or pull-quote from the winner on what the patch represents.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 05</div>
-                  <h5 class="slide-title">How It Started</h5>
-                  <div class="slide-body">Original sketch, or the existing unit patch (if adapted) before the conversion.</div>
-                </div>
-                <div class="slide">
-                  <div class="slide-num">Slide 06</div>
-                  <h5 class="slide-title">How It's Going</h5>
-                  <div class="slide-body">Production shot or final patch mockup.</div>
-                </div>
-                <div class="slide cta">
-                  <div class="slide-num">Slide 07 · CTA</div>
-                  <h5 class="slide-title">Thanks to Everyone Who Submitted</h5>
-                  <div class="slide-body">More drops coming. Follow @aviatorgear.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="asset-row">
-            <div class="asset-row-label">Caption</div>
-            <div class="asset-row-body">
-              <div class="caption-block">The full story behind the winning Design Your Freedom Patch concept.
-
-Every submission had a story. This one stood out. Swipe for how [WINNER HANDLE] got here.</div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -1023,8 +579,9 @@ Every submission had a story. This one stood out. Swipe for how [WINNER HANDLE] 
       <li>Build all on-image copy in Canva using the provided FB, IG, and Story templates. Apply each headline, support line, and CTA to the corresponding template slot.</li>
       <li>If a template has less room than the full on-image copy, keep the <strong>headline + CTA</strong> and move the support line into the caption.</li>
       <li>Story versions should always include a "Tap for details" sticker linking to the feed post.</li>
-      <li>Use the same Aviator Gear logo lockup and color treatment across all three weeks. One campaign, one visual system.</li>
-      <li>Start screenshotting tagged submissions on May 2 so Winner Week has a full visual bank.</li>
+      <li>Use the same Aviator Gear logo lockup and color treatment across all three phases. One campaign, one visual system.</li>
+      <li>Start screenshotting tagged submissions on May 2. Client selects winner Sunday May 10. Winner assets must be built and scheduled Sunday evening for Monday May 11 posting.</li>
+      <li>The "redesign vs reorder" distinction is slide 4 of Carousel 01. Don't drop that slide, it's the main clarification point for the campaign.</li>
       <li>Questions on tone, phrasing, or platform fit go to the campaign lead before publishing. Do not freestyle captions.</li>
     </ul>
   </section>
